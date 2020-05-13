@@ -64,4 +64,4 @@ function success_indicator() {
 git_branch='`git rev-parse --abbrev-ref HEAD 2> /dev/null | sed s/^/\\/`'
 kube_context='`kubectl config current-context `'
 
-PS1="\r\n\[\e[32m\]\A\[\e[m\] • \[\e[31m\]\w\[\e[m\] •\[\e[33m\] \`parse_git_branch\`\[\e[m\]\r\n\`success_indicator\` $ "
+PS1="\r\n\[\e[32m\]\A\[\e[m\] • \[\e[31m\]\w\[\e[m\] •\[\e[33m\] \`parse_git_branch\`\[\e[m\] \`success_indicator\`\r\n$ "
