@@ -1,3 +1,6 @@
+alias ll="ls -la"
+alias dps="docker ps --format \"table {{.Names}}\t{{.Status}}\""
+
 # get current branch in git repo
 function parse_git_branch() {
 	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
