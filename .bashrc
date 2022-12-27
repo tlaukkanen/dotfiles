@@ -1,5 +1,11 @@
 alias ll="ls -la"
 alias dps="docker ps --format \"table {{.Names}}\t{{.Status}}\""
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias gp="git push"
+alias gl="git pull"
+alias glo="git pull origin main"
 
 # get current branch in git repo
 function parse_git_branch() {
