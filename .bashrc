@@ -4,8 +4,11 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias gp="git push"
+alias gpo="git push --set-upstream origin $(git branch --show-current)"
 alias gl="git pull"
 alias glo="git pull origin main"
+alias glog="git log --oneline --decorate --graph"
+alias glogg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
 
 # get current branch in git repo
 function parse_git_branch() {
