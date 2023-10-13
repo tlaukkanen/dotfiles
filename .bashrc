@@ -13,6 +13,8 @@ alias glogg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)
 alias azpr="az repos pr create --squash true --open --delete-source-branch true --auto-complete --output table"
 # Undo latest local commit
 alias gundo="git reset --soft HEAD~1"
+# Show current public IP
+alias myip="curl -s http://ipinfo.io/json | jq '.ip' | sed -e 's/^\"//' -e 's/\"$//'"
 
 # get current branch in git repo
 function parse_git_branch() {
