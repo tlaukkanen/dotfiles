@@ -9,12 +9,16 @@ alias gl="git pull"
 alias glo="git pull origin main"
 alias glog="git log --oneline --decorate --graph"
 alias glogg="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"
-# Open new pull request to Azure DevOps
-alias azpr="az repos pr create --squash true --open --delete-source-branch true --auto-complete --output table"
 # Undo latest local commit
 alias gundo="git reset --soft HEAD~1"
 # Show current public IP
 alias myip="curl -s http://ipinfo.io/json | jq '.ip' | sed -e 's/^\"//' -e 's/\"$//'"
+# == Azure DevOps ==
+# Open new pull request to Azure DevOps
+alias azpr="az repos pr create --squash true --open --delete-source-branch true --auto-complete --output table"
+alias azpropen="az repos pr show --open --id $1"
+alias azmy="az boards query --wiql 'SELECT [System.Id],[System.Title],[System.State] FROM workitems WHERE [Assigned to] = @Me AND [State] = \"Active\"' -o table"
+alias azopen="az boards work-item show --open --output table --id $1"
 
 # get current branch in git repo
 function parse_git_branch() {
