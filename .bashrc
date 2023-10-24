@@ -3,6 +3,8 @@ alias dps="docker ps --format \"table {{.Names}}\t{{.Status}}\""
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+# List 10 latest git branches
+alias gb="git for-each-ref --sort='-committerdate' --format=\"%(refname:short)\" refs/heads/ | head -n 10"
 alias gp="git push"
 alias gpo="git push --set-upstream origin $(git branch --show-current)"
 alias gl="git pull"
