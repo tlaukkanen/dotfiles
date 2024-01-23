@@ -21,6 +21,7 @@ alias azpr="az repos pr create --squash true --open --delete-source-branch true 
 alias azpropen="az repos pr show --open --id $1"
 alias azmy="az boards query --wiql 'SELECT [System.Id],[System.Title],[System.State] FROM workitems WHERE [Assigned to] = @Me AND [State] = \"Active\"' -o table"
 alias azopen="az boards work-item show --open --output table --id $1"
+alias notes="nvim ~/notes.md"
 
 # get current branch in git repo
 function parse_git_branch() {
