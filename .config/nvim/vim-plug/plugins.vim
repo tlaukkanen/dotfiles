@@ -5,8 +5,8 @@ Plug 'sheerun/vim-polyglot'
 " File Explorer
 Plug 'scrooloose/NERDTree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tsony-tsonev/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plug 'tsony-tsonev/nerdtree-git-plugin'
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " Fuzzy Finder
 Plug 'ctrlpvim/ctrlp.vim'
 " Auto pairs for ([{
