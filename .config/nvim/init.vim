@@ -13,6 +13,15 @@ set smartindent " Automatically inserts indentation in some cases
 set number " Show line numbers
 set termguicolors " Enable 24-bit RGB color in the terminal
 
+" GitHub Copilot settings
+lua << EOF
+require("CopilotChat").setup {
+  debug = false,
+  -- See https://github.com/CopilotC-Nvim/CopilotChat.nvim for rest
+}
+EOF
+nmap <C-i> :CopilotChatToggle<CR>
+
 " NERDTree settings
 nmap <C-f> :NERDTreeToggle<CR>
 
