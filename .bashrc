@@ -1,3 +1,6 @@
+# This is for nvim on Windows so that it would look for init.lua from ~/.config/nvim/init.lua
+export XDG_CONFIG_HOME="$HOME/.config"
+
 alias ll="ls -la"
 alias dps="docker ps --format \"table {{.Names}}\t{{.Status}}\""
 alias ..="cd .."
