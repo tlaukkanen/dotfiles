@@ -11,8 +11,10 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 " Auto pairs for ([{
 Plug 'jiangmiao/auto-pairs'
-" GitHub Copilot 🤖
+" GitHub Copilot 🤖 and Copilot Chat 💬
 Plug 'github/copilot.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'CopilotC-Nvim/CopilotChat.nvim', { 'branch': 'canary' }
 " Lean & mean status/tabline for vim that's light as air
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
