@@ -11,6 +11,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 " Auto pairs for ([{
 Plug 'jiangmiao/auto-pairs'
+" Toggle terminal
+Plug 'akinsho/toggleterm.nvim'
 " GitHub Copilot 🤖 and Copilot Chat 💬
 Plug 'github/copilot.vim'
 Plug 'nvim-lua/plenary.nvim'
