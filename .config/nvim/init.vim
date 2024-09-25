@@ -27,6 +27,7 @@ endif
 
 lua require("toggleterm").setup()
 nmap <C-ö> :ToggleTerm<CR>
+let NERDTreeShowHidden=1
 
 " GitHub Copilot settings
 lua << EOF
