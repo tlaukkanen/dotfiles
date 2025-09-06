@@ -1,16 +1,16 @@
 choco install git /NoAutoCrlf -y
 choco install \
+  choco-cleaner \
   vscode-insiders \ 
   nvm \
-  helix \
+  neovim \
   dotnet-sdk  \
   Microsoft-windows-terminal \
-  firacode \
-  azure-data-studio \ 
+  firacode \ 
   azure-cli \ 
   azure-functions-core-tools \ 
-  visualstudio2022professional \ 
   python \ 
+  uv \
   powertoys \ 
   drawio \ 
   nuget.commandline \ 
@@ -20,6 +20,4 @@ choco install \
   7zip \
   docker-desktop \
   docker-compose \
-  gimp \
-  typora \
-  gh -y
+  gimp -y
