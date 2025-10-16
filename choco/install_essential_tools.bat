@@ -21,4 +21,5 @@ choco install ^
   docker-desktop ^
   docker-compose ^
   oh-my-posh ^
+  inkscape ^
   gimp -y
