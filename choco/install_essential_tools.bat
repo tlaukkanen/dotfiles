@@ -9,7 +9,7 @@ choco install ^
   firacode ^ 
   azure-cli ^ 
   azure-functions-core-tools ^ 
-  python ^ 
+  pyenv-win ^
   uv ^
   powertoys ^ 
   drawio ^ 
